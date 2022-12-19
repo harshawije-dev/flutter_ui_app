@@ -264,7 +264,7 @@
          },
          "icon": {
             "raster_icon": {
-               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_word.png/1.5.14/asset"
+               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_word.png/1.5.16/asset"
             }
          },
          "location": "hovercard",
@@ -277,7 +277,7 @@
          },
          "icon": {
             "raster_icon": {
-               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_excel.png/1.5.14/asset"
+               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_excel.png/1.5.16/asset"
             }
          },
          "location": "hovercard",
@@ -290,7 +290,7 @@
          },
          "icon": {
             "raster_icon": {
-               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_power_point.png/1.5.14/asset"
+               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_power_point.png/1.5.16/asset"
             }
          },
          "location": "hovercard",
@@ -312,14 +312,14 @@
       "description": "Access Microsoft Office apps for free",
       "icon": {
          "raster_icon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_office.png/1.5.14/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_fluent_office_hc.png/1.5.14/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_office.png/1.5.14/asset"
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_office.png/1.5.16/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_fluent_office_hc.png/1.5.16/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_office.png/1.5.16/asset"
          },
-         "raster_icon|flight:msEdgeHubAppNewOfficeIcon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_dark.png/1.5.14/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_hc_dark.png/1.5.14/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_light.png/1.5.14/asset"
+         "raster_icon|flight:msEdgeFreeOfficeShowRebrandingPhaseThreeFeature": {
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_dark.png/1.5.16/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_hc_dark.png/1.5.16/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_light.png/1.5.16/asset"
          }
       },
       "id": "64be4f9b-3b81-4b6e-b354-0ba00d6ba485",
@@ -327,6 +327,7 @@
       "locales": [ "af", "am", "ar", "as", "az", "bg", "bn_IN", "bs", "ca", "ca_Es_VALENCIA", "cs", "cy", "da", "de", "el", "en", "en_GB", "es", "es_MX", "et", "eu", "fa", "fi", "fil", "fil", "fr", "fr_CA", "ga", "gd", "gl", "gu", "he", "hi", "hr", "hu", "hy", "id", "is", "it", "ja", "ka", "kk", "km", "kn", "ko", "kok", "kok", "lb", "lo", "lt", "lv", "mi", "mk", "ml", "mr", "ms", "mt", "nb", "ne", "nl", "nn", "or", "pa", "pl", "pt_BR", "pt_PT", "quz", "ro", "ru", "sk", "sl", "sq", "sr_Cyrl_BA", "sr_Cyrl_RS", "sr_Latn_RS", "sv", "ta", "te", "th", "tr", "tt", "ug", "uk", "ur", "uz", "vi", "zh_CN", "zh_TW" ],
       "manifest_version": 3,
       "name": "Microsoft 365 (Office)",
+      "name|flight:msEdgeFreeOfficeShowRebrandingPhaseThreeFeature": "Microsoft 365",
       "notifications": {
          "awareness_prompts": {
             "bubble_notifications": {
@@ -343,15 +344,15 @@
          "url|flight:msEdgeHubAppOfficeCom": "https://www.office.com",
          "url|flight:msEdgeHubAppOfficeSharedHeader": "edge://free-office/?sharedHeader=1"
       },
-      "version": "1.5.14"
+      "version": "1.5.16"
    }, {
       "auto_show": {
          "enabled": true,
          "fre_notification": {
             "enabled": true,
-            "header": "Stay in the flow",
+            "header": "Was opening the email in the pane helpful to you?",
             "show_count": 4,
-            "text": "We have automatically opened Outlook for an enhanced contextual experience."
+            "text": "Was opening the email in the pane helpful to you?"
          },
          "settings_description": "When a web link is opened from an Outlook email, the side pane will automatically open to show that email for context.",
          "settings_learn_more_link": "https://go.microsoft.com/fwlink/?linkid=2213996",
@@ -365,7 +366,8 @@
          "action": {
             "target": "sidepane",
             "type": "url_action",
-            "url": "https://outlook.office.com/mail/compose?isExtension=true"
+            "url": "https://outlook.live.com/mail/compose?isExtension=true",
+            "url|auth:aad": "https://outlook.office.com/mail/compose?isExtension=true"
          },
          "icon": {
             "builtin_icon": "NewEmail"
@@ -376,7 +378,8 @@
          "action": {
             "target": "sidepane",
             "type": "url_action",
-            "url": "https://outlook.office.com/calendar/view/agenda/quickcapture/moreDetails?isExtension=true"
+            "url": "https://outlook.live.com/calendar/view/agenda/quickcapture/moreDetails?isExtension=true",
+            "url|auth:aad": "https://outlook.office.com/calendar/view/agenda/quickcapture/moreDetails?isExtension=true"
          },
          "icon": {
             "builtin_icon": "NewEvent"
@@ -388,9 +391,9 @@
       "description": "Check email while staying in your flow",
       "icon": {
          "raster_icon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook.png/1.5.27/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_fluent_outlook_hc.png/1.5.27/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook.png/1.5.27/asset"
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook.png/1.6.28/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_fluent_outlook_hc.png/1.6.28/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook.png/1.6.28/asset"
          }
       },
       "id": "8682d0fa-50b3-4ece-aa5b-e0b33f9919e2",
@@ -416,7 +419,7 @@
       },
       "trusted_domains": [ "live.com", "office.com", "microsoftonline.com", "microsoft.com", "office365.com" ],
       "trusted_types": [ "default", "dompurify" ],
-      "version": "1.5.27"
+      "version": "1.6.28"
    }, {
       "default_locale": "en",
       "description": "Empower people to express themselves creatively",
@@ -759,7 +762,7 @@
       "flights": [ "msEdgeHubAppMusicSoundCloud" ],
       "icon": {
          "raster_icon": {
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_sound_cloud.png/1.0.0/asset"
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_sound_cloud.png/1.0.1/asset"
          }
       },
       "id": "35a43603-bb38-4b53-ba20-932cb9117794",
@@ -768,10 +771,11 @@
       "locales": [ "en" ],
       "manifest_version": 3,
       "name": "Sound Cloud",
+      "tags": [ "third_party" ],
       "target": {
          "url": "https://m.soundcloud.com/"
       },
-      "version": "1.0.0"
+      "version": "1.0.1"
    }, {
       "capabilities": {
          "show_domain_in_header": true
@@ -860,7 +864,7 @@
       "flights": [ "msEdgeHubAppTwitter" ],
       "icon": {
          "raster_icon": {
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_twitter.png/1.0.0/asset"
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_twitter.png/1.0.1/asset"
          }
       },
       "id": "06be1ebe-f23a-4bea-ae45-3120ad86cfea",
@@ -869,10 +873,11 @@
       "locales": [ "en" ],
       "manifest_version": 3,
       "name": "Twitter",
+      "tags": [ "third_party" ],
       "target": {
          "url": "https://twitter.com/"
       },
-      "version": "1.0.0"
+      "version": "1.0.1"
    }, {
       "default_locale": "en",
       "description": " Chat with people via Telegram!",
@@ -882,7 +887,7 @@
       "flights": [ "msEdgeHubAppTelegram" ],
       "icon": {
          "raster_icon": {
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_telegram.png/1.0.0/asset"
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_telegram.png/1.0.1/asset"
          }
       },
       "id": "25fe2d1d-e934-482a-a62f-ea1705db905d",
@@ -891,10 +896,11 @@
       "locales": [ "en" ],
       "manifest_version": 3,
       "name": "Telegram",
+      "tags": [ "third_party" ],
       "target": {
          "url": "https://telegram.org/"
       },
-      "version": "1.0.0"
+      "version": "1.0.1"
    }, {
       "default_locale": "en",
       "description": " Listen to music on Last Music!",
@@ -926,7 +932,7 @@
       "flights": [ "msEdgeHubAppMusicKuGou" ],
       "icon": {
          "raster_icon": {
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_ku_gou.png/1.0.0/asset"
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_ku_gou.png/1.0.1/asset"
          }
       },
       "id": "3b5ee6f6-5322-4061-81e4-d97681852d66",
@@ -935,10 +941,11 @@
       "locales": [ "en" ],
       "manifest_version": 3,
       "name": "Ku Gou",
+      "tags": [ "third_party" ],
       "target": {
          "url": "https://m.kugou.com/"
       },
-      "version": "1.0.0"
+      "version": "1.0.1"
    }, {
       "default_locale": "en",
       "description": " Listen to music on QQ Music!",
@@ -948,7 +955,7 @@
       "flights": [ "msEdgeHubAppMusicQQ" ],
       "icon": {
          "raster_icon": {
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_qq.png/1.0.0/asset"
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_qq.png/1.0.1/asset"
          }
       },
       "id": "42985e4c-2a12-401d-90f2-afaff9cd7c92",
@@ -957,10 +964,11 @@
       "locales": [ "en" ],
       "manifest_version": 3,
       "name": "QQ Music",
+      "tags": [ "third_party" ],
       "target": {
          "url": "https://i.y.qq.com/n2/m/index.html"
       },
-      "version": "1.0.0"
+      "version": "1.0.1"
    }, {
       "default_locale": "en",
       "description": " Listen to music on Gaana Music!",
@@ -970,7 +978,7 @@
       "flights": [ "msEdgeHubAppMusicGaana" ],
       "icon": {
          "raster_icon": {
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_gaana.png/1.0.0/asset"
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_gaana.png/1.0.1/asset"
          }
       },
       "id": "844aac69-589e-4f86-9e37-cc51a1f8ed96",
@@ -979,10 +987,11 @@
       "locales": [ "en" ],
       "manifest_version": 3,
       "name": "Gaana Music",
+      "tags": [ "third_party" ],
       "target": {
          "url": "https://gaana.com/"
       },
-      "version": "1.0.0"
+      "version": "1.0.1"
    }, {
       "default_locale": "en",
       "description": " Listen to music on Tidal Music!",
@@ -992,7 +1001,7 @@
       "flights": [ "msEdgeHubAppMusicTidal" ],
       "icon": {
          "raster_icon": {
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_tidal.png/1.0.0/asset"
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_tidal.png/1.0.1/asset"
          }
       },
       "id": "a1a78183-6db3-4789-9e7c-84d157846d55",
@@ -1001,10 +1010,11 @@
       "locales": [ "en" ],
       "manifest_version": 3,
       "name": "Tidal Music",
+      "tags": [ "third_party" ],
       "target": {
          "url": "https://tidal.com/"
       },
-      "version": "1.0.0"
+      "version": "1.0.1"
    }, {
       "default_locale": "en",
       "description": " Listen to music on iHeart Music!",
@@ -1014,7 +1024,7 @@
       "flights": [ "msEdgeHubAppMusiciHeart" ],
       "icon": {
          "raster_icon": {
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_iHeart.png/1.0.0/asset"
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_iHeart.png/1.0.1/asset"
          }
       },
       "id": "bacc3c12-ebff-44b4-a0f8-ce8b69c9e047",
@@ -1023,10 +1033,11 @@
       "locales": [ "en" ],
       "manifest_version": 3,
       "name": "iHeart Music",
+      "tags": [ "third_party" ],
       "target": {
          "url": "https://www.iheart.com/podcast/"
       },
-      "version": "1.0.0"
+      "version": "1.0.1"
    }, {
       "default_locale": "en",
       "description": " Chat with people via VK!",
@@ -1036,7 +1047,7 @@
       "flights": [ "msEdgeHubAppVK" ],
       "icon": {
          "raster_icon": {
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_vk.png/1.0.0/asset"
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_vk.png/1.0.1/asset"
          }
       },
       "id": "d2c61a42-950e-49da-800f-d1ba37e1cf2c",
@@ -1045,10 +1056,11 @@
       "locales": [ "en" ],
       "manifest_version": 3,
       "name": "VK",
+      "tags": [ "third_party" ],
       "target": {
          "url": "https://m.vk.com/"
       },
-      "version": "1.0.0"
+      "version": "1.0.1"
    }, {
       "default_locale": "en",
       "description": " Listen to music on Naver Vibe!",
@@ -1058,7 +1070,7 @@
       "flights": [ "msEdgeHubAppMusicNaverVibe" ],
       "icon": {
          "raster_icon": {
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_naver_vibe.png/1.0.0/asset"
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_naver_vibe.png/1.0.1/asset"
          }
       },
       "id": "e7103ffc-db88-4747-bd00-c01a32de2621",
@@ -1067,10 +1079,11 @@
       "locales": [ "en" ],
       "manifest_version": 3,
       "name": "Naver Vibe",
+      "tags": [ "third_party" ],
       "target": {
          "url": "https://vibe.naver.com/today"
       },
-      "version": "1.0.0"
+      "version": "1.0.1"
    }, {
       "default_locale": "en",
       "description": " Listen to music on 163 Music!",
@@ -1080,7 +1093,7 @@
       "flights": [ "msEdgeHubAppMusic163" ],
       "icon": {
          "raster_icon": {
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_163_music.png/1.0.0/asset"
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_163_music.png/1.0.1/asset"
          }
       },
       "id": "f5acef52-81e2-484c-8010-c743f58039c7",
@@ -1089,10 +1102,11 @@
       "locales": [ "en" ],
       "manifest_version": 3,
       "name": "163 Music",
+      "tags": [ "third_party" ],
       "target": {
          "url": "https://y.music.163.com/m/"
       },
-      "version": "1.0.0"
+      "version": "1.0.1"
    }, {
       "capabilities": {
          "show_domain_in_header": true

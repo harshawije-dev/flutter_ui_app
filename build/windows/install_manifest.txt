@@ -1,6 +1,8 @@
 D:/Flutter/flutter_ui_app/build/windows/runner/Debug/data/icudtl.dat
 D:/Flutter/flutter_ui_app/build/windows/runner/Debug/flutter_windows.dll
 D:/Flutter/flutter_ui_app/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+D:/Flutter/flutter_ui_app/build/windows/runner/Debug/data/flutter_assets/assets/icons/logo.png
+D:/Flutter/flutter_ui_app/build/windows/runner/Debug/data/flutter_assets/assets/icons/logo_jpg.jpeg
 D:/Flutter/flutter_ui_app/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
 D:/Flutter/flutter_ui_app/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
 D:/Flutter/flutter_ui_app/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
